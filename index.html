@@ -1,25 +1,87 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content ="width=device-width, initial-scale=1.0">
-    <title>TRR</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div class="header">
-      <nav>
-        <img src="images/logo.jpeg" class="logo">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Sponsors</a></li>
-          <li><a href="#">Achievements</a></li>
-          <li><a href="#">Team</a></li>
 
-        </ul>
-        <a href="#" class="btn">Contact Us</a>
-      </nav>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TRR</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="header" id="header">
+    <nav>
+      <img src="images/logo.jpeg" width="140" height="100" class="logo">
+      <ul>
+        <li><a href="#" id="Home">Home</a></li>
+        <li><a href="#" id="Sponsors">Sponsors</a></li>
+        <li><a href="#" id="Achievements">Achievements</a></li>
+        <li><a href="#" id="Team">Team</a></li>
+
+      </ul>
+      <a href="#" class="btn">Contact Us</a>
+    </nav>
+    <div class="info">
+      <div>
+        <h2>some car info</h2>
+        <p>some car info</p>
+      </div>
+      <div>
+        <h2>some car info</h2>
+        <p>some car info</p>
+      </div>
+      <div>
+        <h2>some car info</h2>
+        <p>some car info</p>
+      </div>
+      <div>
+        <h2>some car info</h2>
+        <p>some car info</p>
+      </div>
+      <!-- line not working -->
+      <div class="line">
+      </div>
+      <div>
+        <h2 id="model">Home</h2>
+      </div>
 
     </div>
 
-  </body>
+  </div>
+<script>
+  var header = document.getElementsById("header");
+  <!-- hm is for home -->
+  var hm = document.getElementsById("Home");
+  <!-- sp is for sponsors -->
+  var sp = document.getElementsById("Sponsors");
+  <!-- ach is for Achievements-->
+  var ach = document.getElementsById("Achievements");
+  <!-- tm is for team-->
+  var tm = document.getElementsById("Team");
+
+
+  var model = document.getElementsById("model");
+
+
+<!-- pic not changing when button is clicked -->
+  hm.onclick= function(){
+    header.style.backgroundImage = "url(images/car.jpg)" ;
+    model.innerHTML = "Home" ;
+  }
+  sp.onclick= function(){
+    header.style.backgroundImage = "url(images/car.jpg)" ;
+    model.innerHTML = "Sponsors" ;
+  }
+  ach.onclick= function(){
+    header.style.backgroundImage = "url(images/car.jpg)" ;
+    model.innerHTML = "Achievements" ;
+  }
+  tm.onclick= function(){
+    header.style.backgroundImage = "url(images/car.jpg)" ;
+    model.innerHTML = "Team" ;
+  }
+
+</script>
+
+</body>
+
 </html>
